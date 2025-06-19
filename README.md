@@ -44,7 +44,7 @@ Abra o projeto no Visual Studio
 
 Compile e execute
 ```
-##🙏 Agradecimentos
+## 🙏 Agradecimentos
 
 Um agradecimento especial ao José Carlos Macoratti e Alura por seus tutoriais e conteúdos educacionais em C# e .NET, que foram fundamentais para o aprendizado e desenvolvimento deste projeto.
 
