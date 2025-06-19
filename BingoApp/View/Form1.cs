@@ -131,7 +131,7 @@ namespace BingoApp
         {
             // Inicializa o Timer de sorteio
             timer1 = new System.Windows.Forms.Timer();
-            timer1.Interval = 10000; // 10 segundos em milissegundos
+            timer1.Interval = 30000; // 10 segundos em milissegundos
             timer1.Tick += SortearBolaAutomaticamente; // Associa o evento Tick ao método
             timer1.Start(); // Inicia o Timer
 
