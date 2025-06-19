@@ -26,5 +26,11 @@ namespace BingoApp.BLL
             else if (bolaSorteadaDouble <= 60) return $"G{bolaSorteadaDouble}";
             else return $"O{bolaSorteadaDouble}";
         }
+        public static string SortearBolaAutomaticamente()
+        {
+            Random randomNumer = new Random();
+            // Gerando apenas numeros entre 1 e 75
+            return randomNumer.Next(1,75).ToString();
+        }
     }
 }

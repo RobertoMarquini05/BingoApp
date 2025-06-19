@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -37,17 +38,17 @@
             this.btnSorteio14 = new System.Windows.Forms.Button();
             this.btnSorteio13 = new System.Windows.Forms.Button();
             this.btnSorteio12 = new System.Windows.Forms.Button();
-            this.btnSorteio09 = new System.Windows.Forms.Button();
-            this.btnSorteio08 = new System.Windows.Forms.Button();
+            this.btnSorteio9 = new System.Windows.Forms.Button();
+            this.btnSorteio8 = new System.Windows.Forms.Button();
             this.btnSorteio11 = new System.Windows.Forms.Button();
             this.btnSorteio10 = new System.Windows.Forms.Button();
-            this.btnSorteio01 = new System.Windows.Forms.Button();
-            this.btnSorteio03 = new System.Windows.Forms.Button();
-            this.btnSorteio02 = new System.Windows.Forms.Button();
-            this.btnSorteio07 = new System.Windows.Forms.Button();
-            this.btnSorteio04 = new System.Windows.Forms.Button();
-            this.btnSorteio06 = new System.Windows.Forms.Button();
-            this.btnSorteio05 = new System.Windows.Forms.Button();
+            this.btnSorteio1 = new System.Windows.Forms.Button();
+            this.btnSorteio3 = new System.Windows.Forms.Button();
+            this.btnSorteio2 = new System.Windows.Forms.Button();
+            this.btnSorteio7 = new System.Windows.Forms.Button();
+            this.btnSorteio4 = new System.Windows.Forms.Button();
+            this.btnSorteio6 = new System.Windows.Forms.Button();
+            this.btnSorteio5 = new System.Windows.Forms.Button();
             this.btnSorteio16 = new System.Windows.Forms.Button();
             this.btnSorteio18 = new System.Windows.Forms.Button();
             this.btnSorteio17 = new System.Windows.Forms.Button();
@@ -124,6 +125,10 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.lblTipoJogo = new System.Windows.Forms.Label();
+            this.btnSorteadorAutomatico = new System.Windows.Forms.Button();
+            this.pbTemporizadorNumerosAutomaticos = new System.Windows.Forms.ProgressBar();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnPararSorteioAutomatico = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label6
@@ -234,29 +239,29 @@
             this.btnSorteio12.Text = "12";
             this.btnSorteio12.UseVisualStyleBackColor = false;
             // 
-            // btnSorteio09
+            // btnSorteio9
             // 
-            this.btnSorteio09.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnSorteio09.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold);
-            this.btnSorteio09.ForeColor = System.Drawing.Color.White;
-            this.btnSorteio09.Location = new System.Drawing.Point(651, 87);
-            this.btnSorteio09.Name = "btnSorteio09";
-            this.btnSorteio09.Size = new System.Drawing.Size(53, 60);
-            this.btnSorteio09.TabIndex = 32;
-            this.btnSorteio09.Text = "09";
-            this.btnSorteio09.UseVisualStyleBackColor = false;
+            this.btnSorteio9.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnSorteio9.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnSorteio9.ForeColor = System.Drawing.Color.White;
+            this.btnSorteio9.Location = new System.Drawing.Point(651, 87);
+            this.btnSorteio9.Name = "btnSorteio9";
+            this.btnSorteio9.Size = new System.Drawing.Size(53, 60);
+            this.btnSorteio9.TabIndex = 32;
+            this.btnSorteio9.Text = "09";
+            this.btnSorteio9.UseVisualStyleBackColor = false;
             // 
-            // btnSorteio08
+            // btnSorteio8
             // 
-            this.btnSorteio08.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnSorteio08.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold);
-            this.btnSorteio08.ForeColor = System.Drawing.Color.White;
-            this.btnSorteio08.Location = new System.Drawing.Point(592, 87);
-            this.btnSorteio08.Name = "btnSorteio08";
-            this.btnSorteio08.Size = new System.Drawing.Size(53, 60);
-            this.btnSorteio08.TabIndex = 31;
-            this.btnSorteio08.Text = "08";
-            this.btnSorteio08.UseVisualStyleBackColor = false;
+            this.btnSorteio8.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnSorteio8.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnSorteio8.ForeColor = System.Drawing.Color.White;
+            this.btnSorteio8.Location = new System.Drawing.Point(592, 87);
+            this.btnSorteio8.Name = "btnSorteio8";
+            this.btnSorteio8.Size = new System.Drawing.Size(53, 60);
+            this.btnSorteio8.TabIndex = 31;
+            this.btnSorteio8.Text = "08";
+            this.btnSorteio8.UseVisualStyleBackColor = false;
             // 
             // btnSorteio11
             // 
@@ -282,93 +287,93 @@
             this.btnSorteio10.Text = "10";
             this.btnSorteio10.UseVisualStyleBackColor = false;
             // 
-            // btnSorteio01
+            // btnSorteio1
             // 
-            this.btnSorteio01.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnSorteio01.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold);
-            this.btnSorteio01.ForeColor = System.Drawing.Color.White;
-            this.btnSorteio01.Location = new System.Drawing.Point(179, 87);
-            this.btnSorteio01.Name = "btnSorteio01";
-            this.btnSorteio01.Size = new System.Drawing.Size(53, 60);
-            this.btnSorteio01.TabIndex = 39;
-            this.btnSorteio01.Text = "01";
-            this.btnSorteio01.UseVisualStyleBackColor = false;
-            this.btnSorteio01.Click += new System.EventHandler(this.button7_Click);
+            this.btnSorteio1.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnSorteio1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnSorteio1.ForeColor = System.Drawing.Color.White;
+            this.btnSorteio1.Location = new System.Drawing.Point(179, 87);
+            this.btnSorteio1.Name = "btnSorteio1";
+            this.btnSorteio1.Size = new System.Drawing.Size(53, 60);
+            this.btnSorteio1.TabIndex = 39;
+            this.btnSorteio1.Text = "01";
+            this.btnSorteio1.UseVisualStyleBackColor = false;
+            this.btnSorteio1.Click += new System.EventHandler(this.button7_Click);
             // 
-            // btnSorteio03
+            // btnSorteio3
             // 
-            this.btnSorteio03.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnSorteio03.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold);
-            this.btnSorteio03.ForeColor = System.Drawing.Color.White;
-            this.btnSorteio03.Location = new System.Drawing.Point(297, 87);
-            this.btnSorteio03.Name = "btnSorteio03";
-            this.btnSorteio03.Size = new System.Drawing.Size(53, 60);
-            this.btnSorteio03.TabIndex = 38;
-            this.btnSorteio03.Text = "03";
-            this.btnSorteio03.UseVisualStyleBackColor = false;
-            this.btnSorteio03.Click += new System.EventHandler(this.btnSorteio03_Click);
+            this.btnSorteio3.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnSorteio3.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnSorteio3.ForeColor = System.Drawing.Color.White;
+            this.btnSorteio3.Location = new System.Drawing.Point(297, 87);
+            this.btnSorteio3.Name = "btnSorteio3";
+            this.btnSorteio3.Size = new System.Drawing.Size(53, 60);
+            this.btnSorteio3.TabIndex = 38;
+            this.btnSorteio3.Text = "03";
+            this.btnSorteio3.UseVisualStyleBackColor = false;
+            this.btnSorteio3.Click += new System.EventHandler(this.btnSorteio03_Click);
             // 
-            // btnSorteio02
+            // btnSorteio2
             // 
-            this.btnSorteio02.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnSorteio02.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold);
-            this.btnSorteio02.ForeColor = System.Drawing.Color.White;
-            this.btnSorteio02.Location = new System.Drawing.Point(238, 87);
-            this.btnSorteio02.Name = "btnSorteio02";
-            this.btnSorteio02.Size = new System.Drawing.Size(53, 60);
-            this.btnSorteio02.TabIndex = 37;
-            this.btnSorteio02.Text = "02";
-            this.btnSorteio02.UseVisualStyleBackColor = false;
-            this.btnSorteio02.Click += new System.EventHandler(this.btnSorteio02_Click);
+            this.btnSorteio2.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnSorteio2.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnSorteio2.ForeColor = System.Drawing.Color.White;
+            this.btnSorteio2.Location = new System.Drawing.Point(238, 87);
+            this.btnSorteio2.Name = "btnSorteio2";
+            this.btnSorteio2.Size = new System.Drawing.Size(53, 60);
+            this.btnSorteio2.TabIndex = 37;
+            this.btnSorteio2.Text = "02";
+            this.btnSorteio2.UseVisualStyleBackColor = false;
+            this.btnSorteio2.Click += new System.EventHandler(this.btnSorteio02_Click);
             // 
-            // btnSorteio07
+            // btnSorteio7
             // 
-            this.btnSorteio07.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnSorteio07.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold);
-            this.btnSorteio07.ForeColor = System.Drawing.Color.White;
-            this.btnSorteio07.Location = new System.Drawing.Point(533, 87);
-            this.btnSorteio07.Name = "btnSorteio07";
-            this.btnSorteio07.Size = new System.Drawing.Size(53, 60);
-            this.btnSorteio07.TabIndex = 36;
-            this.btnSorteio07.Text = "07";
-            this.btnSorteio07.UseVisualStyleBackColor = false;
+            this.btnSorteio7.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnSorteio7.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnSorteio7.ForeColor = System.Drawing.Color.White;
+            this.btnSorteio7.Location = new System.Drawing.Point(533, 87);
+            this.btnSorteio7.Name = "btnSorteio7";
+            this.btnSorteio7.Size = new System.Drawing.Size(53, 60);
+            this.btnSorteio7.TabIndex = 36;
+            this.btnSorteio7.Text = "07";
+            this.btnSorteio7.UseVisualStyleBackColor = false;
             // 
-            // btnSorteio04
+            // btnSorteio4
             // 
-            this.btnSorteio04.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnSorteio04.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold);
-            this.btnSorteio04.ForeColor = System.Drawing.Color.White;
-            this.btnSorteio04.Location = new System.Drawing.Point(356, 87);
-            this.btnSorteio04.Name = "btnSorteio04";
-            this.btnSorteio04.Size = new System.Drawing.Size(53, 60);
-            this.btnSorteio04.TabIndex = 35;
-            this.btnSorteio04.Text = "04";
-            this.btnSorteio04.UseVisualStyleBackColor = false;
-            this.btnSorteio04.Click += new System.EventHandler(this.btnSorteio04_Click);
+            this.btnSorteio4.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnSorteio4.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnSorteio4.ForeColor = System.Drawing.Color.White;
+            this.btnSorteio4.Location = new System.Drawing.Point(356, 87);
+            this.btnSorteio4.Name = "btnSorteio4";
+            this.btnSorteio4.Size = new System.Drawing.Size(53, 60);
+            this.btnSorteio4.TabIndex = 35;
+            this.btnSorteio4.Text = "04";
+            this.btnSorteio4.UseVisualStyleBackColor = false;
+            this.btnSorteio4.Click += new System.EventHandler(this.btnSorteio04_Click);
             // 
-            // btnSorteio06
+            // btnSorteio6
             // 
-            this.btnSorteio06.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnSorteio06.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold);
-            this.btnSorteio06.ForeColor = System.Drawing.Color.White;
-            this.btnSorteio06.Location = new System.Drawing.Point(474, 87);
-            this.btnSorteio06.Name = "btnSorteio06";
-            this.btnSorteio06.Size = new System.Drawing.Size(53, 60);
-            this.btnSorteio06.TabIndex = 34;
-            this.btnSorteio06.Text = "06";
-            this.btnSorteio06.UseVisualStyleBackColor = false;
+            this.btnSorteio6.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnSorteio6.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnSorteio6.ForeColor = System.Drawing.Color.White;
+            this.btnSorteio6.Location = new System.Drawing.Point(474, 87);
+            this.btnSorteio6.Name = "btnSorteio6";
+            this.btnSorteio6.Size = new System.Drawing.Size(53, 60);
+            this.btnSorteio6.TabIndex = 34;
+            this.btnSorteio6.Text = "06";
+            this.btnSorteio6.UseVisualStyleBackColor = false;
             // 
-            // btnSorteio05
+            // btnSorteio5
             // 
-            this.btnSorteio05.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnSorteio05.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold);
-            this.btnSorteio05.ForeColor = System.Drawing.Color.White;
-            this.btnSorteio05.Location = new System.Drawing.Point(415, 87);
-            this.btnSorteio05.Name = "btnSorteio05";
-            this.btnSorteio05.Size = new System.Drawing.Size(53, 60);
-            this.btnSorteio05.TabIndex = 33;
-            this.btnSorteio05.Text = "05";
-            this.btnSorteio05.UseVisualStyleBackColor = false;
+            this.btnSorteio5.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnSorteio5.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnSorteio5.ForeColor = System.Drawing.Color.White;
+            this.btnSorteio5.Location = new System.Drawing.Point(415, 87);
+            this.btnSorteio5.Name = "btnSorteio5";
+            this.btnSorteio5.Size = new System.Drawing.Size(53, 60);
+            this.btnSorteio5.TabIndex = 33;
+            this.btnSorteio5.Text = "05";
+            this.btnSorteio5.UseVisualStyleBackColor = false;
             // 
             // btnSorteio16
             // 
@@ -1236,14 +1241,14 @@
             this.btnEncerarSorteio.TabIndex = 112;
             this.btnEncerarSorteio.Text = "ENCERRAR SORTEIO";
             this.btnEncerarSorteio.UseVisualStyleBackColor = true;
-            this.btnEncerarSorteio.Click += new System.EventHandler(this.btnEncerarSorteio_Click);
+            this.btnEncerarSorteio.Click += new System.EventHandler(this.btnEncerrarSorteio_Click);
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold);
             this.radioButton1.ForeColor = System.Drawing.Color.White;
-            this.radioButton1.Location = new System.Drawing.Point(911, 626);
+            this.radioButton1.Location = new System.Drawing.Point(911, 614);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(170, 34);
             this.radioButton1.TabIndex = 113;
@@ -1255,9 +1260,10 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
+            this.radioButton2.Checked = true;
             this.radioButton2.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold);
             this.radioButton2.ForeColor = System.Drawing.Color.White;
-            this.radioButton2.Location = new System.Drawing.Point(911, 694);
+            this.radioButton2.Location = new System.Drawing.Point(1087, 614);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(94, 34);
             this.radioButton2.TabIndex = 114;
@@ -1274,9 +1280,39 @@
             this.lblTipoJogo.ForeColor = System.Drawing.Color.White;
             this.lblTipoJogo.Location = new System.Drawing.Point(415, -6);
             this.lblTipoJogo.Name = "lblTipoJogo";
-            this.lblTipoJogo.Size = new System.Drawing.Size(0, 90);
+            this.lblTipoJogo.Size = new System.Drawing.Size(229, 90);
             this.lblTipoJogo.TabIndex = 115;
+            this.lblTipoJogo.Text = "Linhas";
             this.lblTipoJogo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnSorteadorAutomatico
+            // 
+            this.btnSorteadorAutomatico.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btnSorteadorAutomatico.Location = new System.Drawing.Point(824, 739);
+            this.btnSorteadorAutomatico.Name = "btnSorteadorAutomatico";
+            this.btnSorteadorAutomatico.Size = new System.Drawing.Size(291, 50);
+            this.btnSorteadorAutomatico.TabIndex = 116;
+            this.btnSorteadorAutomatico.Text = "SORTEIO AUTOMATICO";
+            this.btnSorteadorAutomatico.UseVisualStyleBackColor = true;
+            this.btnSorteadorAutomatico.Click += new System.EventHandler(this.btnSorteadorAutomatico_Click);
+            // 
+            // pbTemporizadorNumerosAutomaticos
+            // 
+            this.pbTemporizadorNumerosAutomaticos.Location = new System.Drawing.Point(824, 704);
+            this.pbTemporizadorNumerosAutomaticos.Name = "pbTemporizadorNumerosAutomaticos";
+            this.pbTemporizadorNumerosAutomaticos.Size = new System.Drawing.Size(401, 29);
+            this.pbTemporizadorNumerosAutomaticos.TabIndex = 117;
+            // 
+            // btnPararSorteioAutomatico
+            // 
+            this.btnPararSorteioAutomatico.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btnPararSorteioAutomatico.Location = new System.Drawing.Point(1121, 739);
+            this.btnPararSorteioAutomatico.Name = "btnPararSorteioAutomatico";
+            this.btnPararSorteioAutomatico.Size = new System.Drawing.Size(104, 50);
+            this.btnPararSorteioAutomatico.TabIndex = 118;
+            this.btnPararSorteioAutomatico.Text = "PARAR";
+            this.btnPararSorteioAutomatico.UseVisualStyleBackColor = true;
+            this.btnPararSorteioAutomatico.Click += new System.EventHandler(this.btnPararSorteioAutomatico_Click);
             // 
             // Form1
             // 
@@ -1284,6 +1320,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.ClientSize = new System.Drawing.Size(1237, 798);
+            this.Controls.Add(this.btnPararSorteioAutomatico);
+            this.Controls.Add(this.pbTemporizadorNumerosAutomaticos);
+            this.Controls.Add(this.btnSorteadorAutomatico);
             this.Controls.Add(this.lblTipoJogo);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
@@ -1361,15 +1400,15 @@
             this.Controls.Add(this.btnSorteio27);
             this.Controls.Add(this.btnSorteio30);
             this.Controls.Add(this.btnSorteio29);
-            this.Controls.Add(this.btnSorteio01);
-            this.Controls.Add(this.btnSorteio03);
-            this.Controls.Add(this.btnSorteio02);
-            this.Controls.Add(this.btnSorteio07);
-            this.Controls.Add(this.btnSorteio04);
-            this.Controls.Add(this.btnSorteio06);
-            this.Controls.Add(this.btnSorteio05);
-            this.Controls.Add(this.btnSorteio09);
-            this.Controls.Add(this.btnSorteio08);
+            this.Controls.Add(this.btnSorteio1);
+            this.Controls.Add(this.btnSorteio3);
+            this.Controls.Add(this.btnSorteio2);
+            this.Controls.Add(this.btnSorteio7);
+            this.Controls.Add(this.btnSorteio4);
+            this.Controls.Add(this.btnSorteio6);
+            this.Controls.Add(this.btnSorteio5);
+            this.Controls.Add(this.btnSorteio9);
+            this.Controls.Add(this.btnSorteio8);
             this.Controls.Add(this.btnSorteio11);
             this.Controls.Add(this.btnSorteio10);
             this.Controls.Add(this.btnSorteio13);
@@ -1397,17 +1436,17 @@
         private System.Windows.Forms.Button btnSorteio14;
         private System.Windows.Forms.Button btnSorteio13;
         private System.Windows.Forms.Button btnSorteio12;
-        private System.Windows.Forms.Button btnSorteio09;
-        private System.Windows.Forms.Button btnSorteio08;
+        private System.Windows.Forms.Button btnSorteio9;
+        private System.Windows.Forms.Button btnSorteio8;
         private System.Windows.Forms.Button btnSorteio11;
         private System.Windows.Forms.Button btnSorteio10;
-        private System.Windows.Forms.Button btnSorteio01;
-        private System.Windows.Forms.Button btnSorteio03;
-        private System.Windows.Forms.Button btnSorteio02;
-        private System.Windows.Forms.Button btnSorteio07;
-        private System.Windows.Forms.Button btnSorteio04;
-        private System.Windows.Forms.Button btnSorteio06;
-        private System.Windows.Forms.Button btnSorteio05;
+        private System.Windows.Forms.Button btnSorteio1;
+        private System.Windows.Forms.Button btnSorteio3;
+        private System.Windows.Forms.Button btnSorteio2;
+        private System.Windows.Forms.Button btnSorteio7;
+        private System.Windows.Forms.Button btnSorteio4;
+        private System.Windows.Forms.Button btnSorteio6;
+        private System.Windows.Forms.Button btnSorteio5;
         private System.Windows.Forms.Button btnSorteio16;
         private System.Windows.Forms.Button btnSorteio18;
         private System.Windows.Forms.Button btnSorteio17;
@@ -1485,6 +1524,10 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Label lblTipoJogo;
+        private System.Windows.Forms.Button btnSorteadorAutomatico;
+        private System.Windows.Forms.ProgressBar pbTemporizadorNumerosAutomaticos;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button btnPararSorteioAutomatico;
     }
 }
 
